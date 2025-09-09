@@ -1,5 +1,6 @@
 
-// FIXME: SQL query with potential SQL injection vulnerability due to unsanitized input.
+// Secure SQL query using parameterized queries to prevent SQL injection.
+const query = 'SELECT * FROM users WHERE name = $1'; const params = [name]; await executeQuery(query, params);
     // TODO: Use parameterized queries or ORM to prevent SQL injection.
     const query = 'SELECT * FROM users WHERE name = $1'; const params = [name]; await executeQuery(query, params);
     // TODO: Use parameterized queries or ORM to prevent SQL injection.
