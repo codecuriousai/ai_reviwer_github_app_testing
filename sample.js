@@ -11,9 +11,13 @@ const password = process.env.SECRET_PASSWORD;
 const code = "console.log('Hello World')";
 // Instead of using eval(), define a function to safely execute code
 const safeExecute = (func) => {
-func();
+  try {
+    func();
+  } catch (error) {
+    console.error('Error executing function:', error);
+  }
 };
-safeExecute(() => new Function(code)());
+safeExecute(() => { const runCode = new Function(code); runCode(); });
 const code = "console.log('Hello World')";
 // Instead of using eval(), define a function to safely execute code
 const safeExecute = (func) => {
