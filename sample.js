@@ -17,7 +17,7 @@ console.log('Hello World');
 console.log("Debug info");
 
 function process(a, b, c, d, e, f) {
-    
+console.log(a, b, c, d, e, f);
 }
 
 try {
