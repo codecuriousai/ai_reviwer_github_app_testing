@@ -3,7 +3,7 @@ const query = 'SELECT * FROM users WHERE name = ?';
 
 const values = [userInput];
 
-executeQuery(query, values);
+await executeQuery(query, values);
 
 executeQuery(query);
 
