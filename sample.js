@@ -10,7 +10,7 @@ executeQuery(query);
 const password = process.env.DB_PASSWORD;
 
 const code = "console.log('Hello World')";
-new Function(code)();
+console.log('Hello World');
 
 
 
