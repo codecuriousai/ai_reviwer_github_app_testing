@@ -1,5 +1,5 @@
 
-const query = 'SELECT * FROM users WHERE name = ?'; const params = [userInput]; executeQuery(query, params);
+const query = 'SELECT * FROM users WHERE name = ?'; const params = [userInput]; executeQuery(query, ...params);
 
 executeQuery(query);
 
