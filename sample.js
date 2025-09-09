@@ -1,5 +1,5 @@
 
-const query = `SELECT * FROM users WHERE name = '${userInput}'`;
+const query = 'SELECT * FROM users WHERE name = ?';
 
 executeQuery(query);
 
