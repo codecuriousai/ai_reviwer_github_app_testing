@@ -1,6 +1,6 @@
 
 const query = 'SELECT * FROM users WHERE name = ?'; executeQuery(query, [userInput]);
-const query = `SELECT * FROM users WHERE name = '${userInput}'`;
+const query = 'SELECT * FROM users WHERE name = ?'; executeQuery(query, [userInput]);
 executeQuery(query);
 
 const password = "SuperSecret123";
