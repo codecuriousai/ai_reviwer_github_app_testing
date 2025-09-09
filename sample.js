@@ -3,7 +3,7 @@ const query = 'SELECT * FROM users WHERE name = ?'; executeQuery(query, [userInp
 const query = 'SELECT * FROM users WHERE name = ?'; executeQuery(query, [userInput]);
 executeQuery(query);
 
-const password = "SuperSecret123";
+// const password = "SuperSecret123";
 
 const code = "console.log('Hello World')";
 new Function(code)();
