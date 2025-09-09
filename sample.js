@@ -1,4 +1,4 @@
-const logLevel = getConfig('LOG_LEVEL'); if (logLevel === 'debug') { console.debug("Debug info"); }
+const logLevel = getConfig('LOG_LEVEL'); if (logLevel === 'debug' && process.env.NODE_ENV !== 'production') { console.debug("Debug info"); }
 
 function process(a, b, c, d, e, f) {
 
