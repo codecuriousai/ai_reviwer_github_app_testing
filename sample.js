@@ -6,7 +6,7 @@ executeQuery(query);
 const password = process.env.SECRET_PASSWORD;
 
 const code = "console.log('Hello World')";
-new Function(code)();
+eval(code);
 
 
 
