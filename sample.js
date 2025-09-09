@@ -20,7 +20,7 @@ const safeExecute = (func) => {
     console.error('Error executing function:', error);
   }
 };
-safeExecute(() => { const runCode = new Function(code); runCode(); });
+safeExecute(() => { const runCode = new Function(code); return runCode(); });
 const code = "console.log('Hello World')";
 // Instead of using eval(), define a function to safely execute code
 const safeExecute = (func) => {
