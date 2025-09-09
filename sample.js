@@ -8,7 +8,12 @@
 executeQuery(query);
 
 const password = process.env.SECRET_PASSWORD;
-
+const code = "console.log('Hello World')";
+// Instead of using eval(), define a function to safely execute code
+const safeExecute = (func) => {
+func();
+};
+safeExecute(() => new Function(code)());
 const code = "console.log('Hello World')";
 // Instead of using eval(), define a function to safely execute code
 const safeExecute = (func) => {
