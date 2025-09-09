@@ -22,4 +22,4 @@ try {
     
 }
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+// Remove this line to enable proper TLS certificate validation
