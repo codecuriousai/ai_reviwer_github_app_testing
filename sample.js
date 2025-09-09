@@ -7,7 +7,7 @@ executeQuery(query, values);
 
 executeQuery(query);
 
-const password = "SuperSecret123";
+const password = process.env.DB_PASSWORD;
 
 const code = "console.log('Hello World')";
 new Function(code)();
