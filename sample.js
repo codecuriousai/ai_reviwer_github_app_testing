@@ -22,7 +22,9 @@ function process(a, b, c, d, e, f) {
     
 }
 
-try {
+// FIXME: Comment suggests disabling TLS certificate validation, which is a security risk.
+    // TODO: Ensure TLS certificate validation is enabled to maintain secure connections.
+    try {
     throw new Error('Oops');
 } catch (e) {
     
