@@ -1,5 +1,5 @@
 
-const query = 'SELECT * FROM users WHERE name = ?'; const params = [userInput]; await executeQuery(query, params);
+const query = 'SELECT * FROM users WHERE name = $1'; const params = [userInput]; await executeQuery(query, params);
 
 executeQuery(query);
 
