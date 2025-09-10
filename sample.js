@@ -1,6 +1,6 @@
-console.log("Debug info");
+if (process.env.NODE_ENV !== 'production') { console.log("Debug info"); }
 
-function process() { }
+// function process() { }
     
 }
 
